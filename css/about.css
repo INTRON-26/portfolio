@@ -1,0 +1,39 @@
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    object-fit: cover;
+    border-radius: 6px;
+    height: 400px;
+    width: 400px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: black;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: black;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid black;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: black;
+    background: none;
+}

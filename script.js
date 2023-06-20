@@ -1,4 +1,29 @@
 $(document).ready(function(){
+
+    $('form').submit(function(event) {
+        event.preventDefault(); 
+        var formData = {
+          name: $('input[name="name"]').val(),
+          email: $('input[name="email"]').val(),
+          subject: $('input[name="subject"]').val(),
+          message: $('textarea[name="message"]').val()
+        };
+        $.ajax({
+          type: 'POST',
+          url: 'email.php',
+          data: formData,
+          success: function(response) {
+            console.log(response);
+            alert('Message sent successfully!');
+            $('form')[0].reset();
+          },
+          error: function(error) {
+            console.log(error);
+            alert('An error occurred while sending the message.');
+          }
+        });
+    });
+
     $('.carousel').owlCarousel({
         margin: 20,
         loop: true,

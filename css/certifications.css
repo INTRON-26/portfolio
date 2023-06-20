@@ -1,0 +1,50 @@
+/* certifications.css */
+
+.certifications {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.certifications .max-width {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.certifications .title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.certifications .cert-list {
+  display: flex;
+  justify-content: center;
+}
+
+.certifications .cert-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.certifications .cert-list li {
+  margin-bottom: 10px;
+}
+
+.certifications .cert-list a {
+  display: inline-block;
+  padding: 10px 30px;
+  width: 800px; /* Add a fixed width for the buttons */
+  background-color: black;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 2px solid black;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.certifications .cert-list a:hover {
+  background-color: #fff;
+  color: black;
+}
